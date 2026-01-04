@@ -13,30 +13,30 @@ weight = 2
 
 [[main]]
 weight = 4
-name = "Pages"
+name = "页面"
 
 [[main]]
-parent = "Pages"
+parent = "页面"
 name = "Blog"
 url = "/blog"
 
 [[main]]
-parent = "Pages"
+parent = "页面"
 name = "Contact"
 url = "/contact"
 
 [[main]]
-parent = "Pages"
+parent = "页面"
 name = "Authors"
 url = "/authors"
 
 [[main]]
-parent = "Pages"
+parent = "页面"
 name = "Categories"
 url = "/categories"
 
 [[main]]
-parent = "Pages"
+parent = "页面"
 name = "404 Page"
 url = "/404"
 
