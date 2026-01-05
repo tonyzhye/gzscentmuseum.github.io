@@ -2,55 +2,76 @@
 
 # main menu
 [[main]]
-name = "Home"
+name = "Museum Overview"
 url = "/"
 weight = 1
 
 [[main]]
-name = "About"
-url = "/about"
+name = "Perfume History"
+url = "/history"
 weight = 2
+
+[[main]]
+name = "Collection"
+url = "/collection"
+weight = 3
+
+[[main]]
+name = "Fragrances"
+url = "/fragrances"
+weight = 4
+
+[[main]]
+name = "Perfume Area"
+url = "/area"
+weight = 5
+
+[[main]]
+name = "Contact Us"
+url = "/contact"
+weight = 6
 
 #[[main]]
 #name = "Elements"
 #url = "/elements"
 #weight = 3
 
-[[main]]
-weight = 4
-name = "Pages"
+# [[main]]
+# weight = 4
+#name = "Pages"
 
-[[main]]
-parent = "Pages"
-name = "Blog"
-url = "/blog"
+#[[main]]
+#parent = "Pages"
+#name = "Blog"
+#url = "/blog"
 
-[[main]]
-parent = "Pages"
-name = "Contact"
-url = "/contact"
+#[[main]]
+#parent = "Pages"
+#name = "Contact"
+#url = "/contact"
 
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "/authors"
+#[[main]]
+#parent = "Pages"
+#name = "Authors"
+#url = "/authors"
 
-[[main]]
-parent = "Pages"
-name = "Categories"
-url = "/categories"
+#[[main]]
+#parent = "Pages"
+#name = "Categories"
+#url = "/categories"
 
-[[main]]
-parent = "Pages"
-name = "404 Page"
-url = "/404"
+#[[main]]
+#parent = "Pages"
+#name = "404 Page"
+#url = "/404"
 
 
 # footer menu
-[[footer]]
-name = "About"
-url = "/about"
-weight = 1
+#[[footer]]
+#name = "About"
+#url = "/about"
+#weight = 1
+
 
 #[[footer]]
 #name = "Elements"

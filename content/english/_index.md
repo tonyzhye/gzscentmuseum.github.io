@@ -1,53 +1,20 @@
 ---
 # Banner
 banner:
-  title: "Guangzhou Scent Museum"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
   image: "/images/banner.png"
-  button:
-    enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "Exhibition"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-    bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
+    content: |
+      This exhibition aims to comprehensively showcase the long-standing history, manufacturing craftsmanship, cultural significance and extensive applications of perfumes and fragrances in modern society. Through diverse forms of display, we strive to present to the audience an authentic yet creative world of perfumes and fragrances.<br><br>
 
-  - title: "Discover the Key Features Of Hugo"
+      Here, visitors can not only get a close-up view of precious spice specimens and classic perfume bottle designs, but also personally experience the fun of perfume blending, and gain an in-depth understanding of the stories and cultures behind perfumes.
+  - title: "About"
     image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-    button:
-      enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+    content: |
+      Since ancient times, perfumes and fragrances have been an indispensable part of human civilization. They not only embody the artistic wisdom of perfumers, but also carry profound historical cultures and regional characteristics. As a bridge linking the past and the future, the Shamian Perfume and Fragrance Museum of Guangzhou is committed to guiding every visitor stepping into this space on a time-transcending fragrance journey through its carefully curated permanent exhibitions.<br><br>
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
-    button:
-      enable: false
-      label: ""
-      link: ""
+      We believe that the permanent exhibitions of the Perfume and Fragrance Museum will be more than just a visual and olfactory feast; they will also be a spiritual experience and a cultural exploration. We hope that every visitor can find their own unique fragrance memory during this journey, and together witness the brilliant radiance of perfumes and fragrances in the long river of human civilization.
 ---

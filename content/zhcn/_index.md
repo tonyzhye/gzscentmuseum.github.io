@@ -1,53 +1,19 @@
 ---
 # Banner
 banner:
-  title: "广州香博"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
   image: "/images/banner.png"
-  button:
-    enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "展览"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-    bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Hugo"
+    content: |
+      本展览旨在全面展示香水香料的悠久历史、制作工艺、文化意义及其在现代社会的广泛应用。通过多元化的展示，我们力求为观众呈现一个既真实又富有创意的香水香料世界。<br><br>
+      在这里，观众不仅可以近距离观赏到珍贵的香料标本、经典的香水瓶设计，还能亲身体验香水调配的乐趣，深入了解香水背后的故事与文化。
+  - title: "关于"
     image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-    button:
-      enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+    content: |
+      香水与香料，自古以来便是人类文明中不可或缺的一部分，它们不仅承载着调香师的艺术智慧，更蕴含着丰富的历史文化和地域特色。广州市沙面香水香料博物馆，作为连接过去与未来的桥梁，致力于通过精心策划的基本陈列展览，引领每一位踏入这里的观众，踏上一场穿越时空的香氛之旅。<br><br>
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
-    button:
-      enable: false
-      label: ""
-      link: ""
+      我们相信，香水香料博物馆的基本陈列展览，将不仅是一次视觉与嗅觉的盛宴，更是一次心灵的洗礼与文化的探索。我们期待每一位观众都能在这次旅程中，找到属于自己的那份独特香氛记忆，共同见证香水香料在人类文明长河中的璀璨光芒。
 ---

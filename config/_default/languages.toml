@@ -5,6 +5,7 @@ languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
 
+################ Chinese language ##################
 [zh-cn]
 languageName = "简体中文"
 languageCode = "zh-CN"

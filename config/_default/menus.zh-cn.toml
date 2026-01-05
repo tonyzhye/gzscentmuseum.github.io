@@ -2,47 +2,37 @@
 
 # main menu
 [[main]]
-name = "首页"
+name = "博物馆概览"
 url = "/"
 weight = 1
 
 [[main]]
-name = "关于"
-url = "/about"
+name = "香水历史"
+url = "/history"
 weight = 2
 
 [[main]]
+name = "藏品"
+url = "/collection"
+weight = 3
+
+[[main]]
+name = "香料"
+url = "/fragrances"
 weight = 4
-name = "页面"
 
 [[main]]
-parent = "页面"
-name = "Blog"
-url = "/blog"
+name = "香水展示区"
+url = "/area"
+weight = 5
 
 [[main]]
-parent = "页面"
-name = "Contact"
+name = "联系我们"
 url = "/contact"
-
-[[main]]
-parent = "页面"
-name = "Authors"
-url = "/authors"
-
-[[main]]
-parent = "页面"
-name = "Categories"
-url = "/categories"
-
-[[main]]
-parent = "页面"
-name = "404 Page"
-url = "/404"
-
+weight = 6
 
 # footer menu
-[[footer]]
-name = "About"
-url = "/about"
-weight = 1
+# [[footer]]
+#name = "About"
+#url = "/about"
+#weight = 1
