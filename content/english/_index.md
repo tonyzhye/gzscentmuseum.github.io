@@ -19,3 +19,10 @@ features:
 
       We believe that the permanent exhibitions of the Perfume and Fragrance Museum will be more than just a visual and olfactory feast; they will also be a spiritual experience and a cultural exploration. We hope that every visitor can find their own unique fragrance memory during this journey, and together witness the brilliant radiance of perfumes and fragrances in the long river of human civilization.
 ---
+
+**Visiting Instructions**<br>
+Opening HoursMonday to Sunday: 10:00 – 19:00<br>
+Operation & Reservation Policy Permanently open; no reservation required.<br>
+Address2/F, No. 4, Shamian 2nd Street, Liwan District, Guangzhou<br>
+Tel:13342866411
+
