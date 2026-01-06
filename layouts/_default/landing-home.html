@@ -1,18 +1,20 @@
 {{ define "main" }}
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="py-0 section">
-      <div class="swiper banner-slider">
-        <div class="swiper-wrapper">
-          {{ range .images }}
-            <div class="swiper-slide w-full">
-              {{ partial "image" (dict "Src" . "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto " ) }}
-            </div>
-          {{ end }}
+    <section class="section-sm">
+      <div class="container">
+        <div class="swiper banner-slider">
+          <div class="swiper-wrapper">
+            {{ range .images }}
+              <div class="swiper-slide">
+                {{ partial "image" (dict "Src" . "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto " ) }}
+              </div>
+            {{ end }}
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
   {{ end }}
