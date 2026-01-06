@@ -1,5 +1,6 @@
 ---
 layout: "landing-home"
+
 # Banner
 banner:
   image: "/images/banner.png"
