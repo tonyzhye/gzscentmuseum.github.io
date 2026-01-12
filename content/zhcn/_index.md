@@ -4,17 +4,44 @@ layout: "landing-home"
 banner:
   images:
     - "/images/slider-1.jpg"
-    - "/images/slider-3.jpg"
+    - "/images/slider-1.jpg"
 
 # Features
 features:
+  - title: "Image Preview"
+    backgroundColor: "rgba(233, 226, 216, 1)"
+    type: "gallery"
+    images:
+      - "/images/gallery-1.png"
+      - "/images/gallery-2.png"
+      - "/images/gallery-3.png"
   - title: "展览"
-    image: "/images/service-exhibition.png"
+    backgroundColor: "rgba(248, 244, 235, 1)"
+    image: "/images/feature-2.jpg"
     content: |
-      本展览旨在全面展示香水香料的悠久历史、制作工艺、文化意义及其在现代社会的广泛应用。通过多元化的展示，我们力求为观众呈现一个既真实又富有创意的香水香料世界。<br><br>
-      在这里，观众不仅可以近距离观赏到珍贵的香料标本、经典的香水瓶设计，还能亲身体验香水调配的乐趣，深入了解香水背后的故事与文化。
+      本展览全面展示香水香料的悠久历史、制作工艺、文化意义及其在现代社会的广泛应用。通过多元化的展示，我们力求为观众呈现一个既真实又富有创意的香水香料世界。
   - title: "关于"
-    image: "/images/service-about.png"
+    backgroundColor: "rgba(233, 226, 216, 1)"
+    image: "/images/feature-3.jpg"
+    content: |
+      香水与香料，自古以来便是人类文明中不可或缺的一部分，它们不仅承载着调香师的艺术智慧，更蕴含着丰富的历史文化和地域特色。广州市沙面香水香料博物馆，作为连接过去与未来的桥梁，致力于通过精心策划的基本陈列展览，引领每一位踏入这里的观众，踏上一场穿越时空的香氛之旅。<br><br>
+
+      我们相信，香水香料博物馆的基本陈列展览，将不仅是一次视觉与嗅觉的盛宴，更是一次心灵的洗礼与文化的探索。我们期待每一位观众都能在这次旅程中，找到属于自己的那份独特香氛记忆，共同见证香水香料在人类文明长河中的璀璨光芒。
+  - title: "Image Preview"
+    backgroundColor: "rgba(233, 226, 216, 1)"
+    type: "gallery"
+    images:
+      - "/images/gallery-1.png"
+      - "/images/gallery-2.png"
+      - "/images/gallery-3.png"
+  - title: "展览"
+    backgroundColor: "rgba(248, 244, 235, 1)"
+    image: "/images/feature-2.jpg"
+    content: |
+      本展览全面展示香水香料的悠久历史、制作工艺、文化意义及其在现代社会的广泛应用。通过多元化的展示，我们力求为观众呈现一个既真实又富有创意的香水香料世界。
+  - title: "关于"
+    backgroundColor: "rgba(233, 226, 216, 1)"
+    image: "/images/feature-3.jpg"
     content: |
       香水与香料，自古以来便是人类文明中不可或缺的一部分，它们不仅承载着调香师的艺术智慧，更蕴含着丰富的历史文化和地域特色。广州市沙面香水香料博物馆，作为连接过去与未来的桥梁，致力于通过精心策划的基本陈列展览，引领每一位踏入这里的观众，踏上一场穿越时空的香氛之旅。<br><br>
 

@@ -13,3 +13,7 @@ html:lang(zh-CN) body {
   justify-content: center;
   align-items: center;
 }
+
+.section-even {
+  background: rgba(248, 244, 235, 1);
+}

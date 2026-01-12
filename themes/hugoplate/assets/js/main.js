@@ -18,6 +18,31 @@
     },
   });
 
+
+  // gallerySlider
+  // ----------------------------------------
+  new Swiper(".image-gallery", {
+    autoHeight: true,
+    spaceBetween: 24,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
   // Testimonial Slider
   // ----------------------------------------
   new Swiper(".testimonial-slider", {
