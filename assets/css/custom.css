@@ -2,7 +2,9 @@
 
 /* Chinese language specific font stack */
 html:lang(zh-CN) body {
-  font-family:"微软雅黑",Microsoft YaHei !important;
+  font-family:
+    "微软雅黑",
+    Microsoft YaHei !important;
 }
 
 .brand-slide {
@@ -16,4 +18,20 @@ html:lang(zh-CN) body {
 
 .section-even {
   background: rgba(248, 244, 235, 1);
+}
+
+/* Hide pagination on screens wider than 991px */
+@media (min-width: 992px) {
+  .image-gallery .swiper-pagination,
+  .image-full-row-gallery .swiper-pagination {
+    display: none !important; /* !important may be needed to override Swiper's inline styles */
+  }
+}
+
+/* Optional: ensure it is visible on smaller screens */
+@media (max-width: 991px) {
+  .image-gallery .swiper-pagination,
+  .image-full-row-gallery .swiper-pagination {
+    display: block; /* or flex, depending on original display type */
+  }
 }

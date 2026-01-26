@@ -1,102 +1,140 @@
 {{ define "main" }}
-  <!-- Banner -->
-  {{ with .Params.banner }}
-    <section class="py-0 section-sm">
-      <div class="container" style="padding-left:0;padding-right:0;">
-        <div class="swiper banner-slider">
-          <div class="swiper-wrapper">
-            {{ range .images }}
-              <div class="swiper-slide">
-                {{ partial "image" (dict "Src" . "Alt" "Banner image" "Loading" "eager" "Class" "max-w-full h-auto" ) }}
-              </div>
-            {{ end }}
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+<!-- Banner -->
+{{ with .Params.banner }}
+<section class="py-0 section-sm">
+  <div class="container" style="padding-left: 0; padding-right: 0">
+    <div class="swiper banner-slider">
+      <div class="swiper-wrapper">
+        {{ range .images }}
+        <div class="swiper-slide">
+          {{ partial "image" (dict "Src" . "Alt" "Banner image" "Loading"
+          "eager" "Class" "max-w-full h-auto" ) }}
         </div>
+        {{ end }}
       </div>
-    </section>
-  {{ end }}
-  <!-- /Banner -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /Banner -->
 
-  <!-- Features -->
-  {{ range $i, $e:= .Params.features }}
-    {{ if eq .type "gallery" }}
-      <section class="py-0 section-sm">
-        <div class="container" style="background-color: {{ .backgroundColor | safeCSS }};">
-          <div class="py-16 row items-center justify-between">
-            <div class="hidden px-0 md:col-2 md:block">
-              &nbsp;
-            </div>
-            <div class="px-0 md:col-8 xl:px-8">
-              <div class="swiper image-gallery">
-                <div class="swiper-wrapper">
-                  {{ range .images }}
-                    <div class="swiper-slide">
-                      {{ with resources.Get . }}
-                          <img loading="lazy" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
-                      {{ end }}
-                    </div>
-                  {{ end }}
-                </div>
-                <div class="swiper-pagination"></div>
+<!-- Features -->
+{{ range $i, $e:= .Params.features }}
+  {{ if eq .type "gallery" }}
+  <section class="py-0 section-sm">
+    <div
+      class="container"
+      style="background-color: {{ .backgroundColor | safeCSS }};">
+      <div class="py-16 row items-center justify-between">
+        {{ if and .padRight }}
+        <div class="hidden px-0 md:col-2 md:block">&nbsp;</div>
+        <div class="px-0 md:col-8 xl:px-8">
+        {{ else }}
+        <div class="px-0 xl:px-8">
+        {{ end }}
+          <div class="swiper  {{ if and .padRight }} image-gallery {{ else }} image-full-row-gallery {{ end }}">
+            <div class="swiper-wrapper">
+              {{ range .images }}
+              <div class="swiper-slide">
+                {{ with resources.Get . }}
+                <img
+                  loading="lazy"
+                  src="{{ .RelPermalink }}"
+                  width="{{ .Width }}"
+                  height="{{ .Height }}"
+                  alt="" />
+                {{ end }}
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ else }}
-      <section class="py-0 section-sm">
-        <div class="container" style="background-color: {{ .backgroundColor | safeCSS }};">
-          <div class="row items-center justify-between">
-            <div
-              class="px-0 mb:md-0 {{ if not (modBool $i 2) }}
-                md:order-2
-              {{ end }} md:col-5 mb-6" style="margin-bottom:0;">
-              {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
-            </div>
-            <div
-              class="{{ if not (modBool $i 2) }}
-                md:order-1
-              {{ end }} md:col-7 lg:col-6">
-              <h2 class="mb-4">
-                {{ .title | markdownify }}
-              </h2>
-              <p class="mb-8 text-lg">
-                {{ .content | markdownify }}
-              </p>
-              <ul>
-                {{ range .bulletpoints }}
-                  <li class="relative mb-4 pl-6">
-                    <i class="fa fa-check absolute left-0 top-1.5"></i>
-                    {{ . | markdownify }}
-                  </li>
-                {{ end }}
-              </ul>
-              {{ with .button }}
-                {{ if .enable }}
-                  <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
-                    {{ .label }}
-                    <i class="fa fa-arrow-right pl-2"></i>
-                  </a>
-                {{ end }}
               {{ end }}
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-      </section>
-    {{ end }}
-  {{ end }}
-  <!-- /Features -->
-
-  <section class="section-sm">
-    <div class="container">
-      <div class="row">
-        <div class="md:col-10 lg:col-7 text-left">
-          <div class="content">{{ .Content }}</div>
+        {{ if and .showText }}
+        <div>
+          <p class="mb-4 mt-12 text-lg text-center font-bold">{{ .title | markdownify }}</p>
+          <p class="mb-8 text-lg">{{ .content | markdownify }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ else if eq .type "about" }}
+  <section class="py-0 section-sm">
+    <div class="container" style="background-color: {{ .backgroundColor | safeCSS }};">
+      <div class="py-16 grid grid-cols-1 lg:grid-cols-3">
+        <div class="lg:col-span-1">
+          <div class="lg:px-6">
+            {{ range split .leftContent "\n" }}
+            <p class="mb-1 text-lg">{{ . | markdownify }}</p>
+            {{ end }}
+          </div>
+        </div>
+        <div class="lg:col-span-1">
+          {{ partial "image" (dict "Src" .centerImage "Alt" "about image" "DisplayMD" "360x") }}
+        </div>
+        <div class="lg:col-span-1">
+          <div class="lg:px-6">
+          {{ range split .rightContent "\n" }}
+          <p class="mb-1 text-lg">{{ . | markdownify }}</p>
+          {{ end }}
+          </div>
         </div>
       </div>
     </div>
   </section>
+  {{ else }}
+  <section class="py-0 section-sm">
+    <div
+      class="container"
+      style="background-color: {{ .backgroundColor | safeCSS }};">
+      <div class="row items-center justify-between">
+        <div
+          class="px-0 mb:md-0 {{ if not (modBool $i 2) }}
+                  md:order-2
+                {{ end }} md:col-5 mb-6"
+          style="margin-bottom: 0">
+          {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL"
+          "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+        </div>
+        <div
+          class="{{ if not (modBool $i 2) }}
+                  md:order-1
+                {{ end }} md:col-7 lg:col-6">
+          <p class="mb-4 text-lg font-bold">{{ .title | markdownify }}</p>
+          <p class="mb-8 text-lg">{{ .content | markdownify }}</p>
+          <ul>
+            {{ range .bulletpoints }}
+            <li class="relative mb-4 pl-6">
+              <i class="fa fa-check absolute left-0 top-1.5"></i>
+              {{ . | markdownify }}
+            </li>
+            {{ end }}
+          </ul>
+          {{ with .button }} {{ if .enable }}
+          <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
+            {{ .label }}
+            <i class="fa fa-arrow-right pl-2"></i>
+          </a>
+          {{ end }} {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+<!-- /Features -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="md:col-10 lg:col-7 text-left">
+        <div class="content">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}
