@@ -12,7 +12,7 @@ url = "/history"
 weight = 2
 
 [[main]]
-name = "藏品"
+name = "经典香水"
 url = "/collection"
 weight = 3
 
@@ -22,12 +22,12 @@ url = "/fragrances"
 weight = 4
 
 [[main]]
-name = "香水展示区"
+name = "现代香展示区"
 url = "/area"
 weight = 5
 
 [[main]]
-name = "联系我们"
+name = "关于我们"
 url = "/contact"
 weight = 6
 
