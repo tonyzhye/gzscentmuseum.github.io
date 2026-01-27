@@ -1,5 +1,5 @@
 {
-  "main": [
+  "backup.main": [
     {
       "name": "facebook",
       "icon": "fab fa-facebook",
